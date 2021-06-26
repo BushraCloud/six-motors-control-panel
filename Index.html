@@ -1,0 +1,100 @@
+<?php require 'Index.php';?>
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="slidecontainer">
+ <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form id="myForm" action="tesr.php" method = "POST" target="dummyframe">
+
+<label for "myRange">Motor1</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange1"
+  name="v1">
+  <p>Value: <span id = "value1"></span></p>
+ <br>
+ <label for "myRange">Motor2</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange2"
+  name="v2">
+  <p>Value: <span id = "value2"></span></p>
+  <br>
+  <label for "myRange">Motor3</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange3"
+  name="v3">
+  <p>Value: <span id = "value3"></span></p>
+  <br>
+  <label for "myRange">Motor4</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange4"
+  name="v4">
+  <p>Value: <span id = "value4"></span></p>
+  <br>
+  <label for "myRange">Motor5</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange5"
+  name="v5">
+  <p>Value: <span id = "value5"></span></p>
+  <br>
+  <label for "myRange">Motor6</label>
+  <input type="range" min="0" max="180" value="50" class="slider" id="myRange6"
+  name="v6">
+  <p>Value: <span id = "value6"></span></p>
+  <br> 
+<input type="submit" value = "Save" name = "save"  style="font-size: 40px; background: rgb(117, 252, 117); border-radius: 50px;" > 
+        <input type="submit" value = "ON" name = on  style="font-size: 40px; background: white; border-radius: 50px;" >
+        <input type="submit" value = "OFF" name = off  style="font-size: 40px; background: black; border-radius: 50px; color: white;" >
+</form>
+</div>
+<style>
+.slidecontainer {
+  width: 100%;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  
+}
+
+.slider:hover {
+  opacity: 1;
+  
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+  
+  
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+  
+}
+h1{
+text-align: center;}
+
+
+</style>
+</head>
+
+</div>
+
+</body>
+</html>
